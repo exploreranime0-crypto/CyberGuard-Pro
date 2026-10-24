@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CyberGuard Pro Ultra — privacy-first cybersecurity dashboard.">
+<meta name="referrer" content="no-referrer">
+<title>CyberGuard Pro Ultra | Advanced Privacy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div class="loader-ring"></div>
+  <div class="loader-text">CYBERGUARD <span>PRO</span><small>INITIALIZING SECURE SYSTEM</small></div>
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="noise"></div>
+<div class="grid-bg"></div>
+<canvas id="particles"></canvas>
+
+<header class="nav">
+  <a class="logo" href="#home">
+    <span class="logo-mark"><span>◆</span></span>
+    <span class="logo-copy"><b>CyberGuard</b> <em>PRO</em><small>PRIVACY • SECURITY • CONTROL</small><small class="owner-tag">OWNER: DHRUV</small></span>
+  </a>
+  <nav id="navLinks">
+    <a class="active" href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#security">Security</a>
+    <a href="#social">Social</a>
+    <a href="#about">About</a><a href="#thanks">Thanks</a>
+  </nav>
+  <a class="nav-cta magnetic" href="#scanner">Start Secure <span>→</span></a>
+  <button class="menu" id="menu" aria-label="Open menu">☰</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy reveal">
+    <div class="status-pill"><i></i> SYSTEM ONLINE <span>•</span> PRIVACY MODE ACTIVE</div>
+    <p class="kicker">THE NEXT GENERATION OF</p>
+    <h1>YOUR DIGITAL<br><span>FORTRESS.</span></h1>
+    <p class="hero-lead">A cinematic privacy assistant for your social presence. Inspect a public profile URL locally, review your security posture, and jump directly to official account controls.</p>
+
+    <div class="hero-actions">
+      <a href="#scanner" class="primary-btn magnetic"><span>🔐</span> Protect My Account <b>→</b></a>
+      <a href="#features" class="ghost-btn">Explore System <span>↓</span></a>
+    </div>
+
+    <div class="micro-stats">
+      <div><strong data-count="99">0</strong><small>PRIVACY FOCUS</small></div>
+      <div><strong data-count="10">0</strong><small>PLATFORMS</small></div>
+      <div><strong data-count="0">0</strong><small>TRACKERS</small></div>
+    </div>
+  </div>
+
+  <div class="hero-visual reveal">
+    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+    <div class="shield-wrap">
+      <div class="shield-glow"></div>
+      <div class="shield">◇<span>🔒</span></div>
+      <div class="scan-line"></div>
+    </div>
+    <div class="floating-card card-top"><span>●</span> THREAT MONITOR <b>ACTIVE</b></div>
+    <div class="floating-card card-bottom"><span>✓</span> ZERO DATA STORAGE <b>LOCAL</b></div>
+  </div>
+</section>
+
+<section class="owner-hero reveal" id="owner">
+  <div class="owner-line"></div>
+  <p class="kicker">CREATED • OWNED • DESIGNED BY</p>
+  <h2>OWNER</h2>
+  <div class="owner-name">DHRUV</div>
+  <p>Founder &amp; Creator of CyberGuard Pro</p>
+  <div class="owner-line"></div>
+</section>
+
+<section class="ticker"><div class="ticker-track"><span>PRIVATE BY DESIGN</span><i>✦</i><span>NO PASSWORDS</span><i>✦</i><span>NO TRACKING</span><i>✦</i><span>SECURITY FIRST</span><i>✦</i><span>PRIVATE BY DESIGN</span><i>✦</i><span>NO PASSWORDS</span><i>✦</i></div></section>
+
+<section class="scanner section" id="scanner">
+  <div class="section-heading reveal">
+    <p class="kicker">01 / PRIVACY SCANNER</p>
+    <h2>Check a profile.<br><span>Keep control.</span></h2>
+    <p>Paste a public social profile URL. Detection happens inside your browser. This demo does not send the URL to a server or store it.</p>
+  </div>
+  <div class="scanner-card reveal">
+    <div class="scanner-head"><span><i></i> SECURE LINK ANALYZER</span><small>LOCAL PROCESSING</small></div>
+    <form id="securityForm">
+      <div class="input-shell"><span>⌁</span><input id="linkInput" type="url" required autocomplete="off" placeholder="https://instagram.com/yourprofile"></div>
+      <button class="primary-btn" type="submit">Analyze Link <b>↗</b></button>
+    </form>
+    <div class="scanner-bottom"><span>🔒 Nothing stored</span><span>⚡ Browser-only check</span><span>🛡️ No credentials required</span></div>
+  </div>
+</section>
+
+<section class="feature-section section" id="features">
+  <div class="section-heading centered reveal"><p class="kicker">02 / SYSTEM MODULES</p><h2>Security, <span>reimagined.</span></h2></div>
+  <div class="cards">
+    <article class="feature-card tilt reveal"><div class="icon">◈</div><p>01</p><h3>Privacy Shield</h3><span>Review privacy controls and reduce unnecessary public exposure.</span><b>EXPLORE →</b></article>
+    <article class="feature-card tilt reveal"><div class="icon">⌁</div><p>02</p><h3>Link Intelligence</h3><span>Recognize supported social platforms without submitting the URL to a backend.</span><b>EXPLORE →</b></article>
+    <article class="feature-card tilt reveal"><div class="icon">◇</div><p>03</p><h3>Security Checklist</h3><span>Use practical steps for passkeys, 2FA, sessions and connected apps.</span><b>EXPLORE →</b></article>
+    <article class="feature-card tilt reveal"><div class="icon">◎</div><p>04</p><h3>Zero-Tracking UI</h3><span>No analytics, advertising SDKs or localStorage are included in this demo.</span><b>EXPLORE →</b></article>
+  </div>
+</section>
+
+<section class="security section" id="security">
+  <div class="security-visual reveal">
+    <div class="radar"><div class="radar-sweep"></div><div class="radar-dot d1"></div><div class="radar-dot d2"></div><div class="radar-dot d3"></div><div class="radar-core">98<small>%</small></div></div>
+  </div>
+  <div class="security-copy reveal">
+    <p class="kicker">03 / SECURITY CENTER</p>
+    <h2>Harden your<br><span>digital perimeter.</span></h2>
+    <div class="checks">
+      <label><input type="checkbox"> <span><b>Enable 2FA or a passkey</b><small>Use phishing-resistant authentication where available.</small></span></label>
+      <label><input type="checkbox"> <span><b>Review active sessions</b><small>Sign out unknown devices and locations.</small></span></label>
+      <label><input type="checkbox"> <span><b>Remove risky connected apps</b><small>Revoke access you no longer need.</small></span></label>
+      <label><input type="checkbox"> <span><b>Protect recovery options</b><small>Keep recovery codes private and offline.</small></span></label>
+    </div>
+  </div>
+</section>
+
+<section class="social section" id="social">
+  <div class="section-heading centered reveal"><p class="kicker">04 / SOCIAL NETWORK</p><h2>Your accounts.<br><span>Your rules.</span></h2></div>
+  <div class="social-grid" id="socialGrid"></div>
+</section>
+
+<section class="cta reveal">
+  <div><p class="kicker">FINAL CHECK</p><h2>Privacy is a process.<br><span>Start with one account.</span></h2></div>
+  <a class="primary-btn magnetic" href="#scanner">Launch Privacy Scan <b>→</b></a>
+</section>
+
+<section class="about section" id="about">
+  <div><p class="kicker">05 / ABOUT</p><div class="owner-badge">✦ OWNER / CREATOR <strong>DHRUV</strong></div><h2>Beautiful security.<br><span>Honest boundaries.</span></h2></div>
+  <div><p>CyberGuard Pro is a front-end privacy assistant concept. It cannot make a third-party account “unhackable” or change another service's privacy settings without that service's own supported controls.</p><p>For production, deploy over HTTPS, use a strict Content Security Policy, secure authentication, minimal logging, patched dependencies and professional security testing.</p></div>
+</section>
+</main>
+
+<footer><div class="footer-logo">◆ <b>CYBERGUARD <em>PRO</em></b></div><span>Privacy • Security • Control</span><span>Owner: <b>DHRUV</b></span><span>© <span id="year"></span> CyberGuard Pro</span></footer>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-card">
+    <button id="closeModal" class="close">×</button>
+    <div class="modal-shield">◇</div>
+    <div class="modal-status">ANALYSIS COMPLETE</div>
+    <h2 id="resultTitle">Security Check</h2>
+    <p id="resultText"></p>
+    <div id="resultActions" class="modal-actions"></div>
+    <small>URL cleared from the input after local inspection.</small>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+    <section class="thanks-final" id="thanks">
+      <div class="thanks-final-grid"></div>
+      <div class="thanks-final-orb"></div>
+      <p class="thanks-final-kicker">✦ FINAL PAGE • SPECIAL THANKS ✦</p>
+      <h2>THANK<br><span>YOU</span></h2>
+      <p class="thanks-final-sub">CyberGuard Pro was created with support, encouragement and inspiration from</p>
+      <div class="thanks-final-names">
+        <div class="thanks-person"><span>01</span><strong>HARISH</strong></div>
+        <div class="thanks-person"><span>02</span><strong>Akash</strong></div>
+        <div class="thanks-person"><span>03</span><strong>SONALI</strong></div>
+      </div>
+      <p class="thanks-final-message">Thank you for being part of the CyberGuard Pro journey.</p>
+      <div class="thanks-final-line"></div>
+      <div class="thanks-final-credit">CREATED &amp; OWNED BY <b>DHRUV</b></div>
+    </section>
